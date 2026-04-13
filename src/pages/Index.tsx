@@ -193,35 +193,46 @@ const Index = () => {
 
         <section className="relative flex h-[90vh] items-center justify-center overflow-hidden px-4 sm:px-6">
           <div className="relative z-10 text-center">
-            <p className="mb-4 font-mono text-xs uppercase tracking-[0.35em] text-accent sm:text-sm">
+            <p className="mb-4 text-center font-mono text-xs uppercase tracking-[0.35em] text-accent sm:text-sm" style={{ textIndent: '0.175em' }}>
               Anto Joseph
             </p>
             <h1
-              className="glitch-text text-[3.5rem] font-display font-bold leading-none tracking-tighter text-foreground select-none xs:text-[4.5rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem]"
+              className="glitch-text text-[3.5rem] font-display font-bold leading-none tracking-tighter text-foreground select-none xs:text-[4.5rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] -ml-2 sm:-ml-4 md:-ml-6"
               data-text="AJ"
             >
               AJ
             </h1>
             <p className="mx-auto mt-4 max-w-[22rem] font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground sm:max-w-none sm:text-sm sm:tracking-[0.3em]">
-              Full Stack Engineer | MCA Student
+              Full Stack Developer | MCA Graduate
             </p>
           </div>
 
         </section>
 
         <section id="about" className="relative px-6 py-32 md:px-12">
-          <div className="mx-auto grid max-w-6xl items-center gap-16 md:grid-cols-2">
-            <ScrollReveal direction="left">
-              <div className="relative overflow-hidden rounded-lg border border-border bg-card p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent" />
-                <div className="relative z-10 space-y-8">
-                  <div>
-                    <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
-                      About
-                    </p>
-                    <h2 className="mt-3 text-4xl font-display font-bold text-foreground md:text-5xl">
-                      Building modern web products with clean, scalable systems.
-                    </h2>
+          <div className="mx-auto max-w-6xl">
+            <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.2fr]">
+              <ScrollReveal direction="left">
+                <div className="flex flex-col gap-8">
+                  <div className="relative overflow-hidden rounded-lg border border-border bg-card">
+                    <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent" />
+                    <div className="relative z-10 p-8">
+                      <div className="mx-auto aspect-[3/4] w-full max-w-[320px] overflow-hidden rounded-lg border-2 border-accent/30 bg-muted">
+                        <img
+                          src="/anto black.png"
+                          alt="Anto Joseph"
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                      <div className="mt-6 text-center">
+                        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
+                          Anto Joseph
+                        </p>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          Full Stack Developer
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="grid gap-4 font-mono text-sm text-muted-foreground sm:grid-cols-2">
@@ -234,7 +245,7 @@ const Index = () => {
                       <p className="mt-2">Full Stack Development</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Current Study</p>
+                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Education</p>
                       <p className="mt-2">MCA (2024 - 2026)</p>
                     </div>
                     <div>
@@ -243,28 +254,36 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </ScrollReveal>
+              </ScrollReveal>
 
-            <ScrollReveal direction="right" delay={150}>
-              <div>
-                <p className="mb-4 font-mono text-xs uppercase tracking-widest text-accent">
-                  Professional Summary
-                </p>
-                <h3 className="mb-6 text-4xl font-display font-bold leading-tight text-foreground md:text-5xl">
-                  Hi, I&apos;m <span className="text-accent">Anto Joseph</span>
-                </h3>
-                <p className="mb-4 text-lg text-muted-foreground">
-                  Full Stack Engineer with hands-on experience building responsive, user-centric
-                  web applications and scalable backend systems.
-                </p>
-                <p className="leading-relaxed text-muted-foreground">
-                  I care about efficient, maintainable solutions and continuous performance
-                  improvement. My recent work has focused on Node.js APIs, React interfaces, cloud
-                  deployment, and real-time systems for IoT and operational workflows.
-                </p>
-              </div>
-            </ScrollReveal>
+              <ScrollReveal direction="right" delay={150}>
+                <div className="space-y-8">
+                  <div>
+                    <p className="mb-4 font-mono text-xs uppercase tracking-widest text-accent">
+                      About
+                    </p>
+                    <h2 className="text-4xl font-display font-bold leading-tight text-foreground md:text-5xl">
+                      Building modern web products with clean, scalable systems.
+                    </h2>
+                  </div>
+
+                  <div>
+                    <p className="mb-4 font-mono text-xs uppercase tracking-widest text-accent">
+                      Professional Summary
+                    </p>
+                    <h3 className="mb-6 text-3xl font-display font-bold leading-tight text-foreground md:text-4xl">
+                      Hi, I&apos;m <span className="text-accent">Anto Joseph</span>
+                    </h3>
+                    <p className="mb-4 text-justify text-lg text-muted-foreground">
+                      A Full Stack Developer with hands-on experience in building responsive, user-focused web applications and scalable backend systems. I prioritize creating efficient, maintainable solutions while continuously improving performance and reliability.
+                    </p>
+                    <p className="text-justify leading-relaxed text-muted-foreground">
+                      My recent work includes developing Node.js APIs, crafting intuitive React interfaces, deploying applications to the cloud, and building real-time systems for IoT and operational workflows.
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
           </div>
         </section>
 
@@ -342,7 +361,7 @@ const Index = () => {
                             {item.period}
                           </p>
                         </div>
-                        <ul className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
+                        <ul className="mt-4 space-y-3 text-justify text-sm leading-relaxed text-muted-foreground">
                           {item.points.map((point) => (
                             <li key={point}>- {point}</li>
                           ))}

@@ -76,9 +76,9 @@ const Navbar = () => {
       <a
         href="#"
         onClick={() => setOpen(false)}
-        className="text-foreground font-display font-bold text-lg tracking-tight"
+        className="text-foreground font-display font-bold text-sm sm:text-base md:text-lg tracking-tight truncate max-w-[180px] sm:max-w-[250px] md:max-w-none"
       >
-        AJ<span className="text-accent">.</span>
+        Anto Joseph Maruthaniyil<span className="text-accent">.</span>
       </a>
       <div className="relative md:hidden">
         {open && (
@@ -166,7 +166,7 @@ const Navbar = () => {
             key={link.label}
             href={link.href}
             onClick={(e) => handleClick(e, link.href)}
-            className="text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
+            className="text-foreground hover:text-accent transition-colors duration-300 relative group"
           >
             {link.label}
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
