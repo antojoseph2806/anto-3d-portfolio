@@ -71,7 +71,7 @@ const socialLinks: SocialLink[] = [
   {
     icon: Instagram,
     label: "Instagram",
-    href: "https://instagram.com/iam_anto______",
+    href: "https://www.instagram.com/anto_maruthaniyil",
   },
 ];
 

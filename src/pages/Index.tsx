@@ -191,25 +191,30 @@ const Index = () => {
         <MouseFollower />
         <Navbar />
 
-        <section className="relative flex h-[90vh] items-center justify-center overflow-hidden px-4 sm:px-6">
+        <section className="relative flex h-[90vh] items-center justify-center overflow-hidden px-4 sm:px-6" aria-labelledby="home-title">
           <div className="relative z-10 text-center">
-            <p className="mb-4 text-center font-mono text-xs uppercase tracking-[0.35em] text-accent sm:text-sm" style={{ textIndent: '0.175em' }}>
-              Anto Joseph
-            </p>
-            <h1
+            <h1 id="home-title" className="mb-4 text-center font-mono text-xs uppercase tracking-[0.35em] text-accent sm:text-sm" style={{ textIndent: '0.175em' }}>
+              Anto Joseph Maruthaniyil
+            </h1>
+            <div
+              aria-hidden="true"
               className="glitch-text text-[3.5rem] font-display font-bold leading-none tracking-tighter text-foreground select-none xs:text-[4.5rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] -ml-2 sm:-ml-4 md:-ml-6"
               data-text="AJ"
             >
               AJ
-            </h1>
+            </div>
             <p className="mx-auto mt-4 max-w-[22rem] font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground sm:max-w-none sm:text-sm sm:tracking-[0.3em]">
-              Full Stack Developer | MCA Graduate
+              Full Stack Developer | MCA Graduate | Idukki, Kerala
+            </p>
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+              I build practical web products with React, Node.js, cloud deployments,
+              IoT systems, AI experiments, and agri-tech ideas.
             </p>
           </div>
 
         </section>
 
-        <section id="about" className="relative px-6 py-32 md:px-12">
+        <section id="about" className="relative px-6 py-32 md:px-12" aria-labelledby="about-title">
           <div className="mx-auto max-w-6xl">
             <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.2fr]">
               <ScrollReveal direction="left">
@@ -217,13 +222,21 @@ const Index = () => {
                   <div className="relative overflow-hidden rounded-lg border border-border bg-card">
                     <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent" />
                     <div className="relative z-10 p-8">
-                      <div className="mx-auto aspect-[3/4] w-full max-w-[320px] overflow-hidden rounded-lg border-2 border-accent/30 bg-muted">
+                      <figure className="mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-lg border-2 border-accent/30 bg-muted">
                         <img
-                          src="/anto black.png"
-                          alt="Anto Joseph"
+                          src="/anto-joseph-maruthaniyil-software-developer-idukki.jpg"
+                          alt="Anto Joseph Maruthaniyil, MCA graduate and software developer in Idukki, Kerala"
+                          title="Anto Joseph Maruthaniyil - Software Developer in Idukki"
+                          width="1080"
+                          height="1080"
+                          decoding="async"
                           className="h-full w-full object-cover"
                         />
-                      </div>
+                        <figcaption className="sr-only">
+                          Portrait of Anto Joseph Maruthaniyil, also known as Anto Maruthaniyil,
+                          an MCA graduate and software developer from Udayagiri, Idukki, Kerala.
+                        </figcaption>
+                      </figure>
                       <div className="mt-6 text-center">
                         <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
                           Anto Joseph
@@ -238,19 +251,19 @@ const Index = () => {
                   <div className="grid gap-4 font-mono text-sm text-muted-foreground sm:grid-cols-2">
                     <div>
                       <p className="text-xs uppercase tracking-[0.25em] text-accent">Location</p>
-                      <p className="mt-2">Idukki, Kerala</p>
+                      <p className="mt-2">Udayagiri, Idukki, Kerala</p>
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-[0.25em] text-accent">Focus</p>
-                      <p className="mt-2">Full Stack Development</p>
+                      <p className="mt-2">Software Development</p>
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-[0.25em] text-accent">Education</p>
-                      <p className="mt-2">MCA (2024 - 2026)</p>
+                      <p className="mt-2">MCA Graduate</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Approach</p>
-                      <p className="mt-2">Clean, scalable systems</p>
+                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Core Stack</p>
+                      <p className="mt-2">React, Node.js, MongoDB</p>
                     </div>
                   </div>
                 </div>
@@ -262,7 +275,7 @@ const Index = () => {
                     <p className="mb-4 font-mono text-xs uppercase tracking-widest text-accent">
                       About
                     </p>
-                    <h2 className="text-4xl font-display font-bold leading-tight text-foreground md:text-5xl">
+                    <h2 id="about-title" className="text-4xl font-display font-bold leading-tight text-foreground md:text-5xl">
                       Building modern web products with clean, scalable systems.
                     </h2>
                   </div>
@@ -272,13 +285,13 @@ const Index = () => {
                       Professional Summary
                     </p>
                     <h3 className="mb-6 text-3xl font-display font-bold leading-tight text-foreground md:text-4xl">
-                      Hi, I&apos;m <span className="text-accent">Anto Joseph</span>
+                      Hi, I&apos;m <span className="text-accent">Anto Joseph Maruthaniyil</span>
                     </h3>
                     <p className="mb-4 text-justify text-lg text-muted-foreground">
-                      A Full Stack Developer with hands-on experience in building responsive, user-focused web applications and scalable backend systems. I prioritize creating efficient, maintainable solutions while continuously improving performance and reliability.
+                      I&apos;m based in Udayagiri, Idukki, Kerala, and I work across the full stack: designing responsive interfaces, building APIs, shaping databases, and deploying projects that are simple to use and easy to maintain.
                     </p>
                     <p className="text-justify leading-relaxed text-muted-foreground">
-                      My recent work includes developing Node.js APIs, crafting intuitive React interfaces, deploying applications to the cloud, and building real-time systems for IoT and operational workflows.
+                      My recent work includes Node.js backends, React dashboards, real-time IoT systems, cloud-hosted applications, and experiments in AI and agri-tech. I like projects where the engineering is useful, focused, and strong enough to grow.
                     </p>
                   </div>
                 </div>

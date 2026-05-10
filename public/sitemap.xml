@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
   <url>
     <loc>https://www.antojoseph.website/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.antojoseph.website/anto-joseph-maruthaniyil-software-developer-idukki.jpg</image:loc>
+      <image:title>Anto Joseph Maruthaniyil - Software Developer in Idukki</image:title>
+      <image:caption>Official portrait of Anto Joseph Maruthaniyil, MCA graduate and software developer in Idukki, Kerala</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.antojoseph.website/Anto-Joseph-Resume.pdf</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.antojoseph.website/gallery</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.antojoseph.website/gallery/anto-joseph-maruthaniyil-idukki-kerala-gallery-01.webp</image:loc>
+      <image:title>Anto Joseph Maruthaniyil Photo Gallery</image:title>
+      <image:caption>Photo gallery of Anto Joseph Maruthaniyil from Udayagiri, Idukki, Kerala</image:caption>
+    </image:image>
   </url>
 </urlset>

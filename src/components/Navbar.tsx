@@ -1,9 +1,11 @@
 import { CSSProperties, useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Resume", href: "#resume" },
   { label: "Projects", href: "#projects" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -22,6 +24,8 @@ const linkStyle: CSSProperties = {
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -61,10 +65,30 @@ const Navbar = () => {
     };
   }, [open]);
 
+  const scrollToSection = (href: string) => {
+    window.setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    }, 0);
+  };
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     setOpen(false);
+
+    if (href.startsWith("#")) {
+      if (location.pathname !== "/") {
+        navigate({ pathname: "/", hash: href });
+        scrollToSection(href);
+        return;
+      }
+
+      window.history.replaceState(null, "", href);
+      scrollToSection(href);
+      return;
+    }
+
+    navigate(href);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -74,8 +98,13 @@ const Navbar = () => {
       }`}
     >
       <a
-        href="#"
-        onClick={() => setOpen(false)}
+        href="/"
+        onClick={(event) => {
+          event.preventDefault();
+          setOpen(false);
+          navigate("/");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
         className="text-foreground font-display font-bold text-sm sm:text-base md:text-lg tracking-tight truncate max-w-[180px] sm:max-w-[250px] md:max-w-none"
       >
         Anto Joseph Maruthaniyil<span className="text-accent">.</span>
@@ -160,7 +189,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div className="hidden md:flex items-center gap-8">
+      <div className="hidden md:flex items-center gap-6 lg:gap-8">
         {navLinks.map((link) => (
           <a
             key={link.label}

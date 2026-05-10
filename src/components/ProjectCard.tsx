@@ -45,7 +45,6 @@ const ProjectCard = ({ title, description, tags, index, links = [] }: ProjectCar
   return (
     <div
       ref={cardRef}
-      data-hover
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onMouseEnter={handleMouseEnter}
@@ -67,18 +66,10 @@ const ProjectCard = ({ title, description, tags, index, links = [] }: ProjectCar
       >
         {/* Animated gradient border */}
         <div 
-          className="absolute -inset-[1px] rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          className="absolute -inset-[1px] rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
           style={{
             background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, hsl(var(--accent) / 0.8), transparent 60%)`,
             zIndex: -1,
-          }}
-        />
-        
-        {/* Glow overlay - limited to top half to not affect text */}
-        <div 
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          style={{
-            background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y * 0.6}%, hsl(var(--accent) / 0.08), transparent 40%)`,
           }}
         />
         
@@ -88,6 +79,12 @@ const ProjectCard = ({ title, description, tags, index, links = [] }: ProjectCar
           style={{ transform: "translateZ(20px)" }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-card/80" />
+          <div 
+            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+            style={{
+              background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, hsl(var(--accent) / 0.08), transparent 45%)`,
+            }}
+          />
           
           {/* Animated background pattern */}
           <div 
@@ -111,7 +108,7 @@ const ProjectCard = ({ title, description, tags, index, links = [] }: ProjectCar
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,hsl(var(--accent)/0.03)_2px,hsl(var(--accent)/0.03)_4px)]" />
         </div>
 
-        <div className="p-6 relative z-10" style={{ transform: "translateZ(30px)" }}>
+        <div className="p-6 relative z-10 bg-card/95">
           <h3 className="text-lg font-display font-semibold text-foreground mb-2 group-hover:text-accent transition-colors duration-300">
             {title}
           </h3>
@@ -135,7 +132,6 @@ const ProjectCard = ({ title, description, tags, index, links = [] }: ProjectCar
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center border border-accent/30 px-3 py-1.5 text-xs font-mono tracking-[0.2em] text-accent transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:scale-105"
-                  style={{ transform: isHovered ? "translateZ(40px)" : "translateZ(0)" }}
                 >
                   {link.label}
                 </a>
