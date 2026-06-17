@@ -9,6 +9,30 @@ import ContactSection from "@/components/ContactSection";
 
 const projects = [
   {
+    title: "Mar Mathew Kavukatt Canonization Website",
+    description:
+      "Designed, developed, and deployed a full-stack canonization website for Mar Mathew Kavukatt under the requirements of the Archdiocese of Changanassery. Built with Next.js and MySQL, featuring dynamic content management, optimized performance, and SEO best practices.",
+    tags: ["Next.js", "MySQL", "Full Stack", "SEO", "Client Project"],
+    links: [
+      {
+        label: "LIVE",
+        href: "https://marmathewkavukatt.org/",
+      },
+    ],
+  },
+  {
+    title: "AKM Sree Rudra Kalari Website",
+    description:
+      "Designed and developed an SEO-optimized website for AKM Sree Rudra Kalari using Next.js, featuring program listings, treatment information, and streamlined booking workflows for enhanced user experience.",
+    tags: ["Next.js", "SEO", "UI/UX", "Client Project"],
+    links: [
+      {
+        label: "LIVE",
+        href: "https://www.akmsreerudra.com/",
+      },
+    ],
+  },
+  {
     title: "Room Booking System",
     description:
       "Built a room booking platform using Node.js and MongoDB for real-time booking management and seamless data storage.",
@@ -101,7 +125,7 @@ const projects = [
 ];
 
 const stats = [
-  { end: 8, suffix: "", label: "Featured Projects" },
+  { end: 10, suffix: "", label: "Featured Projects" },
   { end: 2, suffix: "", label: "Internships" },
   { end: 5, suffix: "", label: "Certifications" },
   { end: 2, suffix: "", label: "Honor Lists" },
@@ -203,12 +227,12 @@ const Index = () => {
             >
               AJ
             </div>
-            <p className="mx-auto mt-4 max-w-[22rem] font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground sm:max-w-none sm:text-sm sm:tracking-[0.3em]">
-              Full Stack Developer | MCA Graduate | Idukki, Kerala
+            <p className="mx-auto mt-4 max-w-[22rem] font-mono text-[11px] uppercase tracking-[0.18em] text-foreground sm:max-w-none sm:text-sm sm:tracking-[0.3em]">
+              Assistant Professor | Full Stack Developer | MCA Graduate
             </p>
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-              I build practical web products with React, Node.js, cloud deployments,
-              IoT systems, AI experiments, and agri-tech ideas.
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-foreground sm:text-base">
+              Passionate about building web applications, IoT solutions, and cloud systems. 
+              Currently working as an Assistant Professor while actively developing real-world tech projects.
             </p>
           </div>
 
@@ -225,45 +249,45 @@ const Index = () => {
                       <figure className="mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-lg border-2 border-accent/30 bg-muted">
                         <img
                           src="/anto-joseph-maruthaniyil-software-developer-idukki.jpg"
-                          alt="Anto Joseph Maruthaniyil, MCA graduate and software developer in Idukki, Kerala"
-                          title="Anto Joseph Maruthaniyil - Software Developer in Idukki"
+                          alt="Anto Joseph Maruthaniyil, Assistant Professor of Computer Science at St. Antony's College Peruvanthanam, Kerala"
+                          title="Anto Joseph Maruthaniyil - Assistant Professor, Computer Science"
                           width="1080"
                           height="1080"
                           decoding="async"
                           className="h-full w-full object-cover"
                         />
                         <figcaption className="sr-only">
-                          Portrait of Anto Joseph Maruthaniyil, also known as Anto Maruthaniyil,
-                          an MCA graduate and software developer from Udayagiri, Idukki, Kerala.
+                          Portrait of Anto Joseph Maruthaniyil,
+                          Assistant Professor in the Department of Computer Science at St. Antony's College Peruvanthanam, Kerala.
                         </figcaption>
                       </figure>
                       <div className="mt-6 text-center">
                         <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
                           Anto Joseph
                         </p>
-                        <p className="mt-1 text-sm text-muted-foreground">
-                          Full Stack Developer
+                        <p className="mt-1 text-sm text-foreground">
+                          Professor & Developer
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="grid gap-4 font-mono text-sm text-muted-foreground sm:grid-cols-2">
+                  <div className="grid gap-4 font-mono text-sm text-foreground sm:grid-cols-2">
                     <div>
                       <p className="text-xs uppercase tracking-[0.25em] text-accent">Location</p>
-                      <p className="mt-2">Udayagiri, Idukki, Kerala</p>
+                      <p className="mt-2">Udayagiri, Kerala</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Focus</p>
-                      <p className="mt-2">Software Development</p>
+                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Based In</p>
+                      <p className="mt-2">Idukki District</p>
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-[0.25em] text-accent">Education</p>
                       <p className="mt-2">MCA Graduate</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Core Stack</p>
-                      <p className="mt-2">React, Node.js, MongoDB</p>
+                      <p className="text-xs uppercase tracking-[0.25em] text-accent">Specialties</p>
+                      <p className="mt-2">Web Apps, IoT, Cloud</p>
                     </div>
                   </div>
                 </div>
@@ -276,7 +300,7 @@ const Index = () => {
                       About
                     </p>
                     <h2 id="about-title" className="text-4xl font-display font-bold leading-tight text-foreground md:text-5xl">
-                      Building modern web products with clean, scalable systems.
+                      Passionate developer building modern web apps and IoT solutions.
                     </h2>
                   </div>
 
@@ -287,11 +311,11 @@ const Index = () => {
                     <h3 className="mb-6 text-3xl font-display font-bold leading-tight text-foreground md:text-4xl">
                       Hi, I&apos;m <span className="text-accent">Anto Joseph Maruthaniyil</span>
                     </h3>
-                    <p className="mb-4 text-justify text-lg text-muted-foreground">
-                      I&apos;m based in Udayagiri, Idukki, Kerala, and I work across the full stack: designing responsive interfaces, building APIs, shaping databases, and deploying projects that are simple to use and easy to maintain.
+                    <p className="mb-4 text-justify text-lg text-foreground">
+                      I'm deeply interested in web development, IoT systems, and building technology that solves real problems. Currently working as an Assistant Professor at St. Antony's College Peruvanthanam, I dedicate my time and energy to developing full-stack applications, IoT prototypes, and cloud-based platforms.
                     </p>
-                    <p className="text-justify leading-relaxed text-muted-foreground">
-                      My recent work includes Node.js backends, React dashboards, real-time IoT systems, cloud-hosted applications, and experiments in AI and agri-tech. I like projects where the engineering is useful, focused, and strong enough to grow.
+                    <p className="text-justify leading-relaxed text-foreground">
+                      My passion lies in creating practical solutions with React, Node.js, MongoDB, ESP32, and modern development tools. From room booking systems and car rental platforms to real-time IoT security systems and RFID attendance tracking—I love the process of turning ideas into working products. I'm constantly exploring new technologies, experimenting with AI applications, and pushing the boundaries of what I can build.
                     </p>
                   </div>
                 </div>
@@ -326,7 +350,7 @@ const Index = () => {
                     Resume
                   </p>
                   <h2 className="text-4xl font-display font-bold text-foreground md:text-6xl">
-                    Education, experience, skills, and credentials.
+                    Experience, education, technical skills, and achievements.
                   </h2>
                 </div>
                 <div className="flex flex-wrap gap-4">
@@ -344,7 +368,7 @@ const Index = () => {
                     target="_blank"
                     rel="noreferrer"
                     data-hover
-                    className="inline-flex items-center border border-border px-6 py-3 font-mono text-sm tracking-[0.2em] text-muted-foreground transition-all duration-300 hover:border-foreground hover:text-foreground"
+                    className="inline-flex items-center border border-border px-6 py-3 font-mono text-sm tracking-[0.2em] text-foreground transition-all duration-300 hover:border-accent hover:text-accent"
                   >
                     LINKEDIN
                   </a>
@@ -366,7 +390,7 @@ const Index = () => {
                             <h3 className="text-xl font-display font-semibold text-foreground">
                               {item.role}
                             </h3>
-                            <p className="text-muted-foreground">
+                            <p className="text-foreground">
                               {item.company} | {item.location}
                             </p>
                           </div>
@@ -374,7 +398,7 @@ const Index = () => {
                             {item.period}
                           </p>
                         </div>
-                        <ul className="mt-4 space-y-3 text-justify text-sm leading-relaxed text-muted-foreground">
+                        <ul className="mt-4 space-y-3 text-justify text-sm leading-relaxed text-foreground">
                           {item.points.map((point) => (
                             <li key={point}>- {point}</li>
                           ))}
@@ -398,8 +422,8 @@ const Index = () => {
                             <h3 className="text-xl font-display font-semibold text-foreground">
                               {item.degree}
                             </h3>
-                            <p className="text-muted-foreground">{item.school}</p>
-                            <p className="mt-2 text-sm text-muted-foreground">{item.detail}</p>
+                            <p className="text-foreground">{item.school}</p>
+                            <p className="mt-2 text-sm text-foreground">{item.detail}</p>
                           </div>
                           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
                             {item.period}
@@ -428,7 +452,7 @@ const Index = () => {
                           {group.items.map((item) => (
                             <span
                               key={`${group.title}-${item}`}
-                              className="rounded border border-border bg-secondary px-2.5 py-1 text-xs font-mono text-muted-foreground"
+                              className="rounded border border-border bg-secondary px-2.5 py-1 text-xs font-mono text-foreground"
                             >
                               {item}
                             </span>
@@ -446,7 +470,7 @@ const Index = () => {
                     <p className="mb-6 font-mono text-xs uppercase tracking-[0.25em] text-accent">
                       Certifications
                     </p>
-                    <ul className="space-y-3 text-sm leading-relaxed text-muted-foreground">
+                    <ul className="space-y-3 text-sm leading-relaxed text-foreground">
                       {certifications.map((item) => (
                         <li key={item}>- {item}</li>
                       ))}
@@ -464,7 +488,7 @@ const Index = () => {
                           href={award.href}
                           target="_blank"
                           rel="noreferrer"
-                          className="block text-sm text-muted-foreground transition-colors duration-300 hover:text-foreground"
+                          className="block text-sm text-foreground transition-colors duration-300 hover:text-accent"
                         >
                           - {award.title}
                         </a>
@@ -485,15 +509,43 @@ const Index = () => {
                   Projects
                 </p>
                 <h2 className="text-4xl font-display font-bold text-foreground md:text-6xl">
-                  Selected work across full-stack, AI, agri-tech, and IoT systems.
+                  Professional client work and technical projects.
                 </h2>
               </div>
             </ScrollReveal>
 
-            <div className="grid gap-6 md:grid-cols-2">
-              {projects.map((project, i) => (
+            {/* Client Projects Section */}
+            <ScrollReveal>
+              <div className="mb-8">
+                <h3 className="mb-6 font-mono text-sm uppercase tracking-[0.25em] text-accent flex items-center gap-3">
+                  <span className="h-px w-8 bg-accent"></span>
+                  Professional Client Projects
+                </h3>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid gap-6 md:grid-cols-2 mb-16">
+              {projects.slice(0, 2).map((project, i) => (
                 <ScrollReveal key={project.title} delay={i * 100}>
                   <ProjectCard {...project} index={i} />
+                </ScrollReveal>
+              ))}
+            </div>
+
+            {/* Academic & Personal Projects Section */}
+            <ScrollReveal>
+              <div className="mb-8">
+                <h3 className="mb-6 font-mono text-sm uppercase tracking-[0.25em] text-accent flex items-center gap-3">
+                  <span className="h-px w-8 bg-accent"></span>
+                  Academic & Personal Projects
+                </h3>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              {projects.slice(2).map((project, i) => (
+                <ScrollReveal key={project.title} delay={i * 100}>
+                  <ProjectCard {...project} index={i + 2} />
                 </ScrollReveal>
               ))}
             </div>
@@ -510,11 +562,11 @@ const Index = () => {
                   Contact
                 </p>
                 <h2 className="mb-6 text-4xl font-display font-bold text-foreground md:text-6xl">
-                  Let&apos;s build something useful together.
+                  Let&apos;s collaborate on development projects and tech innovations.
                 </h2>
-                <p className="text-lg text-muted-foreground">
-                  Send a message directly from the site, or use the social and contact links if
-                  you prefer email, LinkedIn, or Instagram.
+                <p className="text-lg text-foreground">
+                  Open to freelance projects, collaborations, consulting opportunities, 
+                  and discussions about web development, IoT systems, and emerging technologies.
                 </p>
               </div>
             </ScrollReveal>
@@ -525,7 +577,7 @@ const Index = () => {
 
         <footer className="border-t border-border px-6 py-8 md:px-12">
           <div className="mx-auto flex max-w-6xl items-center justify-center">
-            <span className="font-mono text-xs text-muted-foreground">
+            <span className="font-mono text-xs text-foreground">
               Copyright 2026 Anto Joseph. All rights reserved.
             </span>
           </div>

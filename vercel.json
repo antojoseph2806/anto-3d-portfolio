@@ -1,14 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/gallery",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/gallery/",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/sitemap.xml",

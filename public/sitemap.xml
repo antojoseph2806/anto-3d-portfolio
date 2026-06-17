@@ -20,15 +20,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://www.antojoseph.website/gallery</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.antojoseph.website/gallery/anto-joseph-maruthaniyil-idukki-kerala-gallery-01.webp</image:loc>
-      <image:title>Anto Joseph Maruthaniyil Photo Gallery</image:title>
-      <image:caption>Photo gallery of Anto Joseph Maruthaniyil from Udayagiri, Idukki, Kerala</image:caption>
-    </image:image>
-  </url>
 </urlset>

@@ -97,7 +97,7 @@ const ProjectCard = ({ title, description, tags, index, links = [] }: ProjectCar
           
           <div className="absolute inset-0 flex items-center justify-center">
             <span 
-              className="font-mono text-muted-foreground text-xs tracking-widest uppercase transition-all duration-500 group-hover:text-accent group-hover:scale-110"
+              className="font-mono text-foreground text-xs tracking-widest uppercase transition-all duration-500 group-hover:text-accent group-hover:scale-110"
               style={{ transform: isHovered ? "translateZ(30px)" : "translateZ(0)" }}
             >
               {title}
@@ -112,12 +112,12 @@ const ProjectCard = ({ title, description, tags, index, links = [] }: ProjectCar
           <h3 className="text-lg font-display font-semibold text-foreground mb-2 group-hover:text-accent transition-colors duration-300">
             {title}
           </h3>
-          <p className="text-justify text-sm text-muted-foreground mb-4 leading-relaxed">{description}</p>
+          <p className="text-justify text-sm text-foreground mb-4 leading-relaxed">{description}</p>
           <div className="flex flex-wrap gap-2">
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs font-mono px-2.5 py-1 rounded border border-border bg-secondary text-muted-foreground transition-all duration-300 group-hover:border-accent/30"
+                className="text-xs font-mono px-2.5 py-1 rounded border border-border bg-secondary text-foreground transition-all duration-300 group-hover:border-accent/30"
               >
                 {tag}
               </span>
