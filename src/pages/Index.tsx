@@ -99,8 +99,8 @@ const projects = [
     tags: ["AgriTech", "Crowdfunding", "E-Commerce", "Platform"],
     links: [
       {
-        label: "LIVE",
-        href: "https://agricorus.vercel.app/",
+        label: "GITHUB",
+        href: "https://github.com/antojoseph2806/agricorus",
       },
     ],
   },
@@ -117,8 +117,8 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Quiz App"],
     links: [
       {
-        label: "LIVE",
-        href: "https://quiz-app-beta-roan.vercel.app/",
+        label: "GITHUB",
+        href: "https://github.com/antojoseph2806/quiz-app",
       },
     ],
   },
@@ -248,7 +248,7 @@ const Index = () => {
                     <div className="relative z-10 p-8">
                       <figure className="mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-lg border-2 border-accent/30 bg-muted">
                         <img
-                          src="/anto-joseph-maruthaniyil-software-developer-idukki.jpg"
+                          src="/anto-joseph-maruthaniyil-software-developer-idukki.png"
                           alt="Anto Joseph Maruthaniyil, Assistant Professor of Computer Science at St. Antony's College Peruvanthanam, Kerala"
                           title="Anto Joseph Maruthaniyil - Assistant Professor, Computer Science"
                           width="1080"
