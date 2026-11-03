@@ -248,7 +248,7 @@ const Index = () => {
                     <div className="relative z-10 p-8">
                       <figure className="mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-lg border-2 border-accent/30 bg-muted">
                         <img
-                          src="/anto-joseph-maruthaniyil-software-developer-idukki.png"
+                          src="/1000051203.png"
                           alt="Anto Joseph Maruthaniyil, Assistant Professor of Computer Science at St. Antony's College Peruvanthanam, Kerala"
                           title="Anto Joseph Maruthaniyil - Assistant Professor, Computer Science"
                           width="1080"
@@ -331,7 +331,7 @@ const Index = () => {
                 Snapshot
               </p>
             </ScrollReveal>
-            <div className="grid grid-cols-2 gap-12 md:grid-cols-4">
+            <div className="grid grid-cols-2 gap-12 md:grid-cols-4 place-items-center">
               {stats.map((stat) => (
                 <AnimatedCounter key={stat.label} {...stat} />
               ))}

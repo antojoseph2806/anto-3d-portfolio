@@ -47,7 +47,7 @@ const AnimatedCounter = ({ end, suffix = "", label, duration = 2000 }: AnimatedC
   }, [started, end, duration]);
 
   return (
-    <div ref={ref} className="text-center md:text-left">
+    <div ref={ref} className="text-center">
       <div className="text-4xl md:text-5xl font-bold font-display text-foreground">
         {count}{suffix}
       </div>
