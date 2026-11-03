@@ -95,10 +95,7 @@ const Gallery = () => {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
             {photos.map((photo, index) => (
               <ScrollReveal key={photo.src} delay={index * 100}>
-                <figure className="group relative overflow-hidden rounded-lg border border-border bg-card">
-                  {/* Accent glow overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-
+                <figure className="overflow-hidden rounded-lg border border-border bg-card">
                   <img
                     src={photo.src}
                     alt={photo.alt}
@@ -107,16 +104,8 @@ const Gallery = () => {
                     height={1080}
                     decoding="async"
                     loading="lazy"
-                    className="h-full w-full object-cover aspect-square transition-transform duration-700 group-hover:scale-105"
+                    className="h-full w-full object-cover aspect-square"
                   />
-
-                  {/* Caption */}
-                  <figcaption className="absolute bottom-0 left-0 right-0 z-20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 p-4 bg-background/85 backdrop-blur-sm border-t border-accent/20">
-                    <p className="font-mono text-xs uppercase tracking-widest text-accent mb-1">
-                      Anto Joseph Maruthaniyil
-                    </p>
-                    <p className="text-sm text-foreground">{photo.caption}</p>
-                  </figcaption>
                 </figure>
               </ScrollReveal>
             ))}
